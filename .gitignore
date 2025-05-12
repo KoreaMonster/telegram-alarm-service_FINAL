@@ -1,0 +1,12 @@
+# 가상환경 폴더 무시
+.venv/
+
+# 민감한 설정 파일 무시
+src/config.py
+
+# 파이썬 캐시 무시
+__pycache__/
+*.pyc
+
+# Telethon/Pyrogram session 파일 무시
+*.session

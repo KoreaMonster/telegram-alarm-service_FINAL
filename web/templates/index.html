@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Pilot PJT1 | SignUp-Telegram Alert Service</title>
-    <link rel="stylesheet" href="../../static/css/styles.css">
+<!--    <link rel="stylesheet" href="../../static/css/styles.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 
 </head>
 <body>
@@ -11,14 +12,13 @@
         <div class="login-box__title">
             <span>Telegram SignUp</span>
         </div>
-        <div class="login-box__input">
-            <input name="login-box__ID" type="text" placeholder="Telegram ID">
-            <input name="login-box__number" type="number" placeholder="Number">
-            <a href="channel.html" >
-                <input type="submit" value="Login"> <!-- 추후 form으로 바꾸어야함 -->
-            </a>
-
-        </div>
+        <form method="POST" action="/">
+            <div class="login-box__input">
+                <input name="content" type="text" placeholder="Telegram ID">
+                <input name="number" type="number" placeholder="Number">
+                <input type="submit" value="Login">
+            </div>
+        </form>
         <span class="login-box__switch" onclick="switchBox()">
             저장된 계정이있습니다. <u>로그인</u>
         </span>

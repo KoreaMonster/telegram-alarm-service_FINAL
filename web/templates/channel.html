@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Pilot PJT1 | Channel-Telegram Alert Service</title>
-    <link rel="stylesheet" href="../../static/css/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
 </head>
 <body>
 <div class="control-box">
     <div class="control-panel">
         <div class="control-panel__title">
             <span>등록된 채널</span>
-            <i class="fa-solid fa-rotate-right"></i>
+            <a herf="#">
+                <i class="fa-solid fa-rotate-right"></i>
+            </a>
         </div>
         <div class="control-panel__content">
             <div class="control-panel__content__channel">
@@ -29,7 +31,9 @@
     <div class="control-panel fixed-keyword">
         <div class="control-panel__title">
             <span>Fixed Keyword</span>
-            <i class="fa-solid fa-rotate-right"></i>
+            <a herf="#">
+                <i class="fa-solid fa-rotate-right"></i>
+            </a>
         </div>
         <div class="control-panel__content">
             <div class="control-panel__content__channel">
@@ -67,18 +71,16 @@
     <div class="control-panel ">
         <div class="control-panel__title">
             <span>채널 추가</span>
-            <i class="fa-solid fa-circle-plus"></i>
+            <a herf="#">
+                <i class="fa-solid fa-circle-plus"></i>
+            </a>
         </div>
         <div class="control-panel__content">
             <div class="control-panel__content__channel">
                 <span>채널명_1</span>
-                <i class="fa-solid fa-circle-check"></i>
-                <!--      <i class="fa-solid fa-circle-xmark"></i>-->
             </div>
             <div class="control-panel__content__channel">
                 <span>채널명_2</span>
-                <i class="fa-solid fa-circle-check"></i>
-                <!--      <i class="fa-solid fa-circle-xmark"></i>-->
             </div>
         </div>
     </div>
@@ -86,25 +88,23 @@
     <div class="control-panel ">
         <div class="control-panel__title">
             <span>검색 Keyword 추가</span>
-            <i class="fa-solid fa-circle-plus"></i>
+            <a herf="#">
+                <i class="fa-solid fa-circle-plus"></i>
+            </a>
         </div>
         <div class="control-panel__content">
             <div class="control-panel__content__channel">
                 <span>채널명_1</span>
-                <i class="fa-solid fa-circle-check"></i>
-                <!--      <i class="fa-solid fa-circle-xmark"></i>-->
             </div>
             <div class="control-panel__content__channel">
                 <span>채널명_2</span>
-                <i class="fa-solid fa-circle-check"></i>
-                <!--      <i class="fa-solid fa-circle-xmark"></i>-->
             </div>
         </div>
     </div>
 
     <div class="control-panel ">
         <div class="control-panel__title">
-            <a href="recommend_channel.html"> <span>채널 추천 / 다음</span> </a>
+            <a href='/recommend_channel'> <span>채널 추천 / 다음</span> </a>
             <i class="fa-solid fa-rotate-right" ></i>
         </div>
         <div class="control-panel__content">

@@ -1,11 +1,8 @@
 # 텔레그램 채널을 검색하여 매일 자동으로 검색하거나, 사용자가 수동으로 채널을 추가할 수 있는 기능을 구현합니다.
 
 import json
-import asyncio
 
-from pyexpat.errors import messages
-
-from src.telegram_client import client
+from app.core.telegram_client import client
 
 channel_names = []  # 채널 목록을 저장하는 리스트 -> 추후 DB로 확장
 

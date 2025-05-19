@@ -1,0 +1,77 @@
+.keyword-wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    height: auto; /* 필요시 조절 */
+}
+
+
+.keyword-box {
+    display: flex;
+    margin: 20px 50px;
+    padding-bottom: 30px;
+    background-color: #5e5e5e;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 280px;
+    height: 80vh;
+}
+
+.keyword-box__title {
+    display: flex;
+    background-color: #ffbbbb;
+    padding: 20px 15px;
+    justify-content:space-between;
+    font-weight: bold;
+    font-size: 24px;
+}
+.keyword-box__title i {
+    margin-right: 8px;
+    margin-top: 9.5px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-size: 20px;
+}
+.keyword-box__wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.keyword-box__content {
+    display: flex;
+    flex-direction: column;
+}
+.keyword-box__content__keyword  {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.keyword-box__content__keyword span{
+    color: #efefef;
+}
+.keyword-box__content__keyword i{
+    margin-right: 8px;
+    color: #2929bf;
+    font-size: 20px;
+}
+.keyword-box__channel-wrapper__channel-name {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.keyword-box__channel-wrapper__channel-name i{
+    margin-right: 8px;
+    margin-top: 3.5px;
+}
+.keyword-box__channel-wrapper___detail {
+    padding: 10px 15px;
+    flex: 1; /* detail 부분이 남은 공간을 채우도록 함 */
+
+}
+.keyword-box__channel-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* 모든 채널 박스가 동일한 높이를 갖도록 함 */
+}

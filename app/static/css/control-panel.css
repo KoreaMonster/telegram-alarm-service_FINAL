@@ -1,0 +1,53 @@
+.control-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr 2fr;
+    gap: 35px 10px;
+    position: absolute;
+    top: 40px;
+    height: auto; /* 필요시 조절 */
+}
+
+
+.control-panel {
+    display: flex;
+    margin: 20px 50px;
+    padding-bottom: 30px;
+    background-color: #5e5e5e;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 280px;
+}
+
+.control-panel__title {
+    display: flex;
+    background-color: #ffbbbb;
+    padding: 20px 15px;
+    justify-content:space-between;
+    font-weight: bold;
+    font-size: 24px;
+}
+.control-panel__content {
+    display: flex;
+    flex-direction: column;
+}
+.control-panel__content__channel {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.control-panel__content__channel span{
+    color: #efefef;
+}
+.control-panel__content__channel i{
+    margin-right: 8px;
+    color: #2929bf;
+    font-size: 20px;
+}
+.control-panel__title i {
+    margin-right: 8px;
+    margin-top: 9.5px;
+    cursor: pointer;
+    color: #5e5e5e;
+    font-size: 20px;
+}

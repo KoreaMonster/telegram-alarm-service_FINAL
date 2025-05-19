@@ -1,11 +1,8 @@
 #텔레그램 채널에서 메시지를 스크래핑하고 키워드를 검색하는 기능
-import asyncio
 
 # from src.main import keyword
-from src.telegram_client import client
-from telethon import events
+from app.core.telegram_client import client
 
-from src.channel_manager import load_channel_names
 # from telegram_client import client
 
 

@@ -1,5 +1,5 @@
 from telethon import TelegramClient
-from src.config import TELEGRAM_API_ID, TELEGRAM_API_HASH, PHONE_NUMBER, SESSION_NAME
+from app.config import TELEGRAM_API_ID, TELEGRAM_API_HASH, PHONE_NUMBER, SESSION_NAME
 
 #
 # # 세션 이름은 고유하게 설정

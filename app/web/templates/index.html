@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Pilot PJT1 | SignUp-Telegram Alert Service</title>
+    <link rel="stylesheet" href="../../static/css/styles.css">
+
+</head>
+<body>
+    <div class="login-box" id="signup-box">
+        <div class="login-box__title">
+            <span>Telegram SignUp</span>
+        </div>
+        <div class="login-box__input">
+            <input name="login-box__ID" type="text" placeholder="Telegram ID">
+            <input name="login-box__number" type="number" placeholder="Number">
+            <a href="channel.html" >
+                <input type="submit" value="Login"> <!-- 추후 form으로 바꾸어야함 -->
+            </a>
+
+        </div>
+        <span class="login-box__switch" onclick="switchBox()">
+            저장된 계정이있습니다. <u>로그인</u>
+        </span>
+    </div>
+
+<!--    <div class="login-box" id="login-box">-->
+<!--        <div class="login-box__title">-->
+<!--            <span>Telegram Login</span>-->
+<!--        </div>-->
+<!--        <div class="login-box__input">-->
+<!--            <input name="login-box__ID" type="text" placeholder="Login ID">-->
+
+<!--            <input type="submit" value="Login">-->
+<!--        </div>-->
+<!--        <span class="login-box__switch" onclick="switchBox()">-->
+<!--            처음 방문했습니다. <u>회원가입</u>-->
+<!--        </span>-->
+<!--    </div>-->
+
+
+    <script>
+        window.onload = () => {
+            // 처음엔 회원가입(signup)만 보이게
+            document.getElementById('signup-box').classList.add('active');
+        };
+
+        function switchBox() {
+            const signupBox = document.getElementById('signup-box');
+            const loginBox = document.getElementById('login-box');
+
+            // .active 클래스 토글로 표시 전환
+            signupBox.classList.toggle('active');
+            loginBox.classList.toggle('active');
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/f776a02de8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

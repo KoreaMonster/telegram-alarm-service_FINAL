@@ -1,15 +1,13 @@
 #보안뉴스 RSS, 데일리 시큐 RSS
 #키워드 추출, 중복 제거, AI기반 재구성(이건 나중에)
-import os
 
 import genai
 from google import genai
 from google.genai import types
 
 import feedparser
-import requests
 
-from src.config import GEMINI_API_KEY
+from app.config import GEMINI_API_KEY
 
 
 def get_boannews_titles(rss_url='http://www.boannews.com/media/news_rss.xml?mkind=1', max_items=10):

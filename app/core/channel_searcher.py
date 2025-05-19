@@ -1,10 +1,9 @@
 import json
 
-from telethon import TelegramClient
 from telethon.tl.functions.contacts import SearchRequest
 
-from src.security_keyword_extractor import get_keywords_from_gemini, get_dailysecu_titles, get_boannews_titles
-from src.telegram_client import client
+from app.core.security_keyword_extractor import get_keywords_from_gemini, get_dailysecu_titles, get_boannews_titles
+from app.core.telegram_client import client
 
 fixed_keywords = ["hack", "crack", "leak", "botnet", "exploit", "phishing", "ransomware", "carding", "keylogger", "malware"]
 
@@ -73,7 +72,7 @@ def get_combined_keyword():
     return combined_channel_keyword
 
 async def search_public_channels(channel_keywords, max_channel=5, max_age_date=7):
-    from telethon.tl.types import Chat, Channel
+    from telethon.tl.types import Channel
 
     results_map = {}
 

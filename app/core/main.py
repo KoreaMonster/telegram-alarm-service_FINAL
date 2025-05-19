@@ -1,16 +1,11 @@
 # 메인 프로그램 파일
-import os
-import asyncio
-from telethon import TelegramClient
 
-from src.channel_searcher import search_public_channels, get_combined_keyword, add_fixed_keyword, \
+from app.core.channel_searcher import search_public_channels, get_combined_keyword, add_fixed_keyword, \
     remove_channel_keyword, load_fixed_keyword
-from src.scraper import recent_10_messages, display_keyword_search_results
-from src.telegram_client import start_client, client
-from channel_manager import tel_channel_access
-from src.channel_manager import add_channel_names, remove_channel_names, print_channels, load_channel_names
-from src.config import TELEGRAM_API_ID, TELEGRAM_API_HASH
-
+from app.core.scraper import recent_10_messages, display_keyword_search_results
+from app.core.telegram_client import start_client, client
+from app.core.channel_manager import tel_channel_access
+from app.core.channel_manager import add_channel_names, remove_channel_names, print_channels
 
 #전역변수
 keyword = None              #나중에는 리스트로

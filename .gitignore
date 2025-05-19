@@ -2,7 +2,7 @@
 .venv/
 
 # 민감한 설정 파일 무시
-src/config.py
+app/config.py
 
 # 파이썬 캐시 무시
 __pycache__/
